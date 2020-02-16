@@ -16,6 +16,7 @@ public class Fruit {
 
 
     public Fruit() {
+
         System.out.println("fruit's constructer");
     }
 
@@ -25,5 +26,22 @@ public class Fruit {
             //super();
             System.out.println("apple's constructor");
         }
+        public int getPrice(int numberOfFruits) {
+            return 10 * numberOfFruits;
+        }
+
     }
+
+    public static class Banana extends Fruit {
+        public Banana(int amount) {
+            // If you don't add super() explicitly, Java will do it for you behind the scenes.
+            //super();
+            System.out.println("Banana's constructor");
+        }
+        public int getPrice(int numberOfFruits) {
+            return 10 * numberOfFruits;
+        }
+
+    }
+
 }
